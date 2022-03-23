@@ -1,6 +1,6 @@
 <template>
   <div class="header-nav-wrap">
-    <div class="header-nav">
+    <nav class="header-nav">
       <h1>Wang DoWon</h1>
       <ul>
         <li>About Me</li>
@@ -8,7 +8,7 @@
         <li>Archiving</li>
         <li>Projects</li>
       </ul>
-    </div>
+    </nav>
   </div>
 </template>
 
