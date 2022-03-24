@@ -5,7 +5,7 @@
       <ul>
         <li>About Me</li>
         <li>Skills</li>
-        <li>Archiving</li>
+        <li>Link</li>
         <li>Projects</li>
       </ul>
     </nav>
