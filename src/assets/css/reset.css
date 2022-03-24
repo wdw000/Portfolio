@@ -46,9 +46,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html {
-	font-size: 10px;
-}
-* {
-	box-sizing: border-box;
-}
