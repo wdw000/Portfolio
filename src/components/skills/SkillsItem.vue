@@ -18,5 +18,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.skills-item {
+  font-size: 1.6rem;
+  width: fit-content;
+  border: solid black 1px;
+  border-radius: 1em;
+  padding: 1em;
+}
 </style>

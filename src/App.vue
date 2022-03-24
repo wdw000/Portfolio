@@ -18,4 +18,19 @@ export default {
 </script>
 
 <style>
+@import url("./assets/css/reset.css");
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
 </style>

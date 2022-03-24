@@ -1,4 +1,5 @@
 <template>
+  <h2>Link</h2>
   <div class="link-box">
     <ul>
       <li v-for="(item, index) in items" :key="index">

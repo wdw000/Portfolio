@@ -1,4 +1,5 @@
 <template>
+  <h2>Skills</h2>
   <div class="skills">
     <ul>
       <li v-for="(item, index) in items" :key="index">
