@@ -21,7 +21,9 @@ export default {
           title: "Frontend",
           titleItem: ["HTML5", "CSS3", "JavaScript", "Vue.js"],
         },
-        { title: "Backend", titleItem: ["Node.js"] },
+        { title: "Backend", titleItem: ["Node.js+express"] },
+        { title: "Tools", titleItem: ["PhotoShop"] },
+        { title: "Learning", titleItem: ["React.js", "TypeScript"] },
       ],
     };
   },
