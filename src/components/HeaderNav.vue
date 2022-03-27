@@ -18,7 +18,7 @@ export default {};
 .header-nav {
   width: inherit;
   height: fit-content;
-  max-width: 1920px;
+  max-width: 1300px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;

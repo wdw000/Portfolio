@@ -45,7 +45,7 @@ export default {
 <style scoped>
 .about-me {
   width: inherit;
-  max-width: 1920px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -54,6 +54,7 @@ ul {
   flex-flow: row wrap;
   align-items: center;
   margin: 0 auto;
+  padding: 1em;
 }
 
 li {

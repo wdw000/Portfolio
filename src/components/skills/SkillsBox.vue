@@ -1,6 +1,6 @@
 <template>
-  <h2>Skills</h2>
-  <div class="skills">
+  <h2 class="hidden">Skills</h2>
+  <div class="skills-box">
     <ul>
       <li v-for="(item, index) in items" :key="index">
         <skills-item :item="item"></skills-item>
@@ -18,17 +18,55 @@ export default {
     return {
       items: [
         {
-          title: "Frontend",
-          titleItem: ["HTML5", "CSS3", "JavaScript", "Vue.js"],
+          class: "skill-skills",
+          title: "Skills",
+          titleItem: [
+            {
+              name: "HTML5",
+              url: "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg",
+            },
+            {
+              name: "CSS3",
+              url: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
+            },
+            {
+              name: "JavaScript",
+              url: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+            },
+            {
+              name: "Vue.js",
+              url: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+            },
+            {
+              name: "jQuery",
+              url: "https://upload.wikimedia.org/wikipedia/commons/8/81/JQuery_logo_text.svg",
+            },
+
+            {
+              name: "Express.js",
+              url: "https://i.cloudup.com/zfY6lL7eFa-3000x3000.png",
+            },
+          ],
         },
-        { title: "Backend", titleItem: ["Node.js+express"] },
-        { title: "Tools", titleItem: ["PhotoShop"] },
-        { title: "Learning", titleItem: ["React.js", "TypeScript"] },
+        {
+          class: "skill-learning",
+          title: "Learning",
+          titleItem: [
+            {
+              name: "React.js",
+              url: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+            },
+            {
+              name: "TypeScript",
+              url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+            },
+          ],
+        },
       ],
     };
   },
 };
 </script>
 
-<style>
+<style scoped>
 </style>

@@ -28,9 +28,14 @@ html {
   box-sizing: border-box;
 }
 
-h2 {
+h2,
+h3 {
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 </style>

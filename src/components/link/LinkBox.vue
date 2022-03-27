@@ -19,6 +19,8 @@ export default {
         {
           title: "github",
           url: "github.com/wdw000",
+          imgSrc:
+            "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
           contents: [
             "공부하면서 끄적였던 소스들",
             "각종 튜토리얼들",
@@ -31,5 +33,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.link-box {
+  width: inherit;
+  max-width: 1300px;
+  margin: 0 auto;
+  border: solid black 1px;
+}
 </style>
