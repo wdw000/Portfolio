@@ -1,23 +1,14 @@
 <template>
   <div class="link-item">
-    <dl>
-      <div class="link-title">
-        <img :src="item.imgSrc" />
-        <div>
-          <dt>{{ item.title }}</dt>
-          <a :href="`https://${item.url}`" target="_blank">
-            <dd>{{ item.url }}</dd>
-          </a>
-        </div>
+    <a :href="`https://${item.url}`" target="_blank">
+      <div :class="['link-wrap', item.class]">
+        <div
+          class="inner"
+          :style="{ 'background-image': `url(${item.imgSrc}` }"
+        ></div>
       </div>
-      <dd
-        v-for="(value, index) in item.contents"
-        :key="index"
-        class="link-content"
-      >
-        {{ value }}
-      </dd>
-    </dl>
+      <p>{{ item.title }}</p></a
+    >
   </div>
 </template>
 
@@ -32,19 +23,34 @@ export default {
 <style scoped>
 .link-item {
   font-size: 1.6rem;
-  width: 45%;
-  margin: 0 auto;
-  border: solid black 1px;
-  padding: 1em;
 }
 
-.link-title {
-  display: flex;
-  padding: 1rem;
+.link-wrap {
+  width: 100%;
+  background-color: #f6f4f2;
+  position: relative;
 }
 
-img {
-  width: 10%;
-  margin-right: 1rem;
+.link-wrap::after {
+  padding-bottom: 100%;
+  display: block;
+  content: "";
+}
+
+.inner {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p {
+  text-align: center;
 }
 </style>

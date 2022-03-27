@@ -44,7 +44,7 @@ export default {
 
             {
               name: "Express.js",
-              url: "https://i.cloudup.com/zfY6lL7eFa-3000x3000.png",
+              url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
             },
           ],
         },

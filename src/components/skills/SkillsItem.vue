@@ -2,7 +2,7 @@
   <article class="skills-item">
     <h3>{{ item.title }}</h3>
     <hr />
-    <div :class="['skill-wrap', item.class]">
+    <div :class="['skill-wrap', item.class, 'graybox']">
       <article
         v-for="(value, index) in item.titleItem"
         :key="index"
@@ -58,8 +58,8 @@ export default {
 }
 
 .skill-square {
-  width: 90%;
-  margin: 5%;
+  width: 85%;
+  margin: 7.5%;
   background-color: #f6f4f2;
   position: relative;
 }

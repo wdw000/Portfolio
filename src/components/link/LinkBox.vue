@@ -18,6 +18,7 @@ export default {
       items: [
         {
           title: "github",
+          class: "link-github",
           url: "github.com/wdw000",
           imgSrc:
             "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
@@ -38,6 +39,15 @@ export default {
   width: inherit;
   max-width: 1300px;
   margin: 0 auto;
-  border: solid black 1px;
+}
+
+ul {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  width: 20%;
 }
 </style>

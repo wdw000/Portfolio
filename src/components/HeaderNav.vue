@@ -30,6 +30,7 @@ export default {};
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .header-nav > h1 {
