@@ -58,7 +58,6 @@ ul {
 
 li {
   width: 100%;
-  border: solid black 1px;
 }
 
 @media (min-width: 600px) {

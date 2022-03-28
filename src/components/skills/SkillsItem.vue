@@ -36,7 +36,6 @@ export default {
 
 .skill-wrap {
   display: grid;
-  border: solid black 1px;
 }
 
 .skill-skills {
@@ -64,7 +63,6 @@ export default {
   margin-right: 7.5%;
   background-color: #f6f4f2;
   position: relative;
-  border: solid blue 1px;
 }
 
 .skill-square::after {

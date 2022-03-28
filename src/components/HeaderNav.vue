@@ -9,7 +9,7 @@
     </ul>
   </nav>
 
-  <nav class="header-nav-small" ref="menu_list">
+  <nav class="header-nav-small">
     <div>
       <h1>Wang DoWon</h1>
       <button @click="openMenu">menu</button>
@@ -29,6 +29,7 @@ export default {
   data() {
     return {
       menu: false,
+      scrollTop: 0,
     };
   },
 
@@ -58,7 +59,6 @@ export default {
   justify-content: space-between;
   margin: 0 auto;
   font-size: 2rem;
-  border: solid black 1px;
   padding: 2rem;
 }
 
@@ -75,7 +75,6 @@ export default {
 .header-nav > ul > li {
   flex: 1;
   text-align: right;
-  border: solid black 1px;
 }
 
 .header-nav-small {
@@ -84,7 +83,6 @@ export default {
   height: fit-content;
   margin: 0 auto;
   font-size: 2rem;
-  border: solid black 1px;
 }
 
 .header-nav-small > div {
@@ -96,13 +94,12 @@ export default {
 .header-nav-small > ul {
   position: absolute;
   width: 100%;
-  border: solid 1px black;
   background-color: #fff;
   padding: 2rem;
 }
 
 .header-nav-small > ul > li {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 @media (min-width: 719px) {

@@ -14,6 +14,8 @@ import SkillsBox from "./components/skills/SkillsBox.vue";
 export default {
   name: "App",
   components: { AboutMe, SkillsBox, LinkBox, HeaderNav },
+
+  methods: {},
 };
 </script>
 <style>
