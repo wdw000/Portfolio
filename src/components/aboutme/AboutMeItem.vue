@@ -20,9 +20,12 @@ export default {
 .about-me-item {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 80%;
+  justify-content: space-evenly;
   font-size: 1.6rem;
+  margin: 0 10%;
+}
+dl {
+  flex: 1;
 }
 dt {
   font-weight: bold;
@@ -31,6 +34,8 @@ dt {
 }
 
 img {
-  margin: 1em;
+  margin: 1em 0;
+  margin-right: 1rem;
+  width: 48px;
 }
 </style>

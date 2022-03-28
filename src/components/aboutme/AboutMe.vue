@@ -54,11 +54,11 @@ ul {
   flex-flow: row wrap;
   align-items: center;
   margin: 0 auto;
-  padding: 1em;
 }
 
 li {
   width: 100%;
+  border: solid black 1px;
 }
 
 @media (min-width: 600px) {

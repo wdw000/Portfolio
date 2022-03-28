@@ -1,4 +1,5 @@
 <template>
+  <header-nav></header-nav>
   <about-me></about-me>
   <skills-box></skills-box>
   <link-box></link-box>
@@ -6,15 +7,15 @@
 
 <script>
 import AboutMe from "./components/aboutme/AboutMe.vue";
+import HeaderNav from "./components/HeaderNav.vue";
 import LinkBox from "./components/link/LinkBox.vue";
 import SkillsBox from "./components/skills/SkillsBox.vue";
 
 export default {
   name: "App",
-  components: { AboutMe, SkillsBox, LinkBox },
+  components: { AboutMe, SkillsBox, LinkBox, HeaderNav },
 };
 </script>
-
 <style>
 @import url("./assets/css/reset.css");
 
