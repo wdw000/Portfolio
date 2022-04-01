@@ -172,8 +172,13 @@ export default {
   z-index: 100;
 }
 
+.header-nav-wrap {
+  display: none;
+}
+
 .header-scroll {
   background-color: white;
+  border-bottom: solid lightgray 1px;
 }
 
 .header-nav {
@@ -238,12 +243,6 @@ export default {
   background-repeat: no-repeat;
 }
 
-a:link,
-a:visited {
-  color: black;
-  text-decoration: none;
-}
-
 li > a {
   position: relative;
 }
@@ -258,20 +257,6 @@ li > a {
   border-radius: 10rem;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
-}
-
-a:hover > .underline {
-  width: 100%;
-  left: 0;
-}
-
-.header-nav > ul > li > a:hover {
-  color: gray;
-}
-
-.spread-underline:hover:after {
-  width: 100%;
-  left: 0;
 }
 
 .graybox {
@@ -291,6 +276,20 @@ a:hover > .underline {
   }
   .header-nav {
     display: flex;
+  }
+  .header-nav-wrap {
+    display: block;
+  }
+}
+
+@media (hover: hover) {
+  a:hover > .underline {
+    width: 100%;
+    left: 0;
+  }
+
+  .header-nav > ul > li > a:hover {
+    color: gray;
   }
 }
 </style>

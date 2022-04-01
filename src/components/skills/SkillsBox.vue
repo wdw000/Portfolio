@@ -1,5 +1,5 @@
 <template>
-  <div class="skills-box" id="Skills">
+  <div class="skills-box component-box" id="Skills">
     <h2 class="hidden">Skills</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
@@ -69,6 +69,12 @@ export default {
 </script>
 
 <style scoped>
+.skills-box {
+  font-size: 1.6rem;
+  width: inherit;
+  max-width: 1300px;
+  margin: 5rem auto;
+}
 .skills-box::before {
   content: "";
   display: block;

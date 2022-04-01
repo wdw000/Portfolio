@@ -26,6 +26,7 @@ export default {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -46,5 +47,23 @@ h3 {
 .test {
   height: 100vh;
   background-color: gray;
+}
+
+.link-img::after {
+  content: "";
+  height: 0.9em;
+  width: 0.9em;
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url("@/assets/img/external.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (hover: hover) {
+  .item-hover:hover {
+    filter: blur(2px) grayscale(1);
+  }
 }
 </style>

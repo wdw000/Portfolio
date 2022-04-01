@@ -17,21 +17,25 @@ export default {
     return {
       items: [
         {
+          class: "name",
           name: "이름",
           value: "왕도원",
           imgSrc: "round_person_black_24dp_2x.png",
         },
         {
+          class: "birth",
           name: "생년월일",
           value: "98.02.20",
           imgSrc: "round_calendar_today_black_24dp_2x.png",
         },
         {
+          class: "school",
           name: "학력",
           value: "동양미래대학교<br>(컴퓨터정보공학과)",
           imgSrc: "round_edit_black_24dp_2x.png",
         },
         {
+          class: "email",
           name: "이메일",
           value: "dowonwang01@gmail.com",
           imgSrc: "round_email_black_24dp_2x.png",
@@ -46,7 +50,7 @@ export default {
 .about-me {
   width: inherit;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .about-me::before {

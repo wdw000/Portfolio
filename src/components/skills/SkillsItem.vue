@@ -2,15 +2,15 @@
   <article class="skills-item">
     <h3>{{ item.title }}</h3>
     <hr />
-    <div :class="['skill-wrap', item.class, 'graybox']">
+    <div :class="['skill-wrap', item.class]">
       <article
         v-for="(value, index) in item.titleItem"
         :key="index"
-        class="skill-square"
+        :class="['skill-square', `${item.class}-square`]"
       >
         <h4 class="hidden">{{ value.name }}</h4>
         <div
-          class="inner"
+          class="inner item-hover"
           :style="{ 'background-image': `url(${value.url})` }"
         ></div>
       </article>
@@ -27,13 +27,6 @@ export default {
 </script>
 
 <style scoped>
-.skills-item {
-  font-size: 1.6rem;
-  width: inherit;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 .skill-wrap {
   display: grid;
 }
@@ -69,6 +62,28 @@ export default {
   padding-bottom: 100%;
   display: block;
   content: "";
+}
+
+.skills-item:nth-child(1) {
+  margin-bottom: 5rem;
+}
+
+.skill-skills-square:nth-child(n + 5) {
+  margin-bottom: 0;
+}
+
+.skill-learning-square:nth-child(n + 2) {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .skill-skills-square:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+
+  .skill-learning-square:nth-child(n + 1) {
+    margin-bottom: 0;
+  }
 }
 
 .inner {

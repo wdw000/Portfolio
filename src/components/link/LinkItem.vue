@@ -3,11 +3,11 @@
     <a :href="`https://${item.url}`" target="_blank">
       <div :class="['link-wrap', item.class]">
         <div
-          class="inner"
+          class="inner item-hover"
           :style="{ 'background-image': `url(${item.imgSrc}` }"
         ></div>
       </div>
-      <p>{{ item.title }}</p></a
+      <p class="link-img">{{ item.title }}</p></a
     >
   </div>
 </template>
@@ -21,10 +21,6 @@ export default {
 </script>
 
 <style scoped>
-.link-item {
-  font-size: 1.6rem;
-}
-
 .link-wrap {
   width: 100%;
   background-color: #f6f4f2;
@@ -52,5 +48,6 @@ export default {
 
 p {
   text-align: center;
+  margin-top: 1rem;
 }
 </style>

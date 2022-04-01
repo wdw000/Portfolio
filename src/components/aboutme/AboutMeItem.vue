@@ -1,11 +1,19 @@
 <template>
-  <div class="about-me-item">
+  <div class="about-me-item" v-if="item.class !== 'email'">
     <img :src="require(`@/assets/img/${item.imgSrc}`)" alt="" />
     <dl>
-      <dt>{{ item.name }}</dt>
+      <dt :class="{ 'link-img': item.class === 'email' }">{{ item.name }}</dt>
       <dd v-html="item.value"></dd>
     </dl>
   </div>
+  <a href="mailto:dowonwang01@gmail.com" v-if="item.class === 'email'">
+    <div class="about-me-item">
+      <img :src="require(`@/assets/img/${item.imgSrc}`)" alt="" />
+      <dl>
+        <dt :class="{ 'link-img': item.class === 'email' }">{{ item.name }}</dt>
+        <dd v-html="item.value"></dd>
+      </dl></div
+  ></a>
 </template>
 
 <script>

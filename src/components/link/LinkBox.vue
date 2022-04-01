@@ -1,5 +1,5 @@
 <template>
-  <div class="link-box" id="Link">
+  <div class="link-box component-box" id="Link">
     <h2>Link</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
@@ -33,7 +33,8 @@ export default {
 .link-box {
   width: inherit;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 5rem auto;
+  font-size: 1.6rem;
 }
 
 .link-box::before {
