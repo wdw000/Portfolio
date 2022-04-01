@@ -1,6 +1,6 @@
 <template>
-  <h2 class="hidden">Skills</h2>
-  <div class="skills-box">
+  <div class="skills-box" id="Skills">
+    <h2 class="hidden">Skills</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
         <skills-item :item="item"></skills-item>
@@ -69,4 +69,10 @@ export default {
 </script>
 
 <style scoped>
+.skills-box::before {
+  content: "";
+  display: block;
+  margin-top: -64px;
+  padding-top: 64px;
+}
 </style>

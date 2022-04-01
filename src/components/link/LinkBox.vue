@@ -1,6 +1,6 @@
 <template>
-  <h2>Link</h2>
-  <div class="link-box">
+  <div class="link-box" id="Link">
+    <h2>Link</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
         <link-item :item="item"></link-item>
@@ -22,11 +22,6 @@ export default {
           url: "github.com/wdw000",
           imgSrc:
             "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-          contents: [
-            "공부하면서 끄적였던 소스들",
-            "각종 튜토리얼들",
-            "프로젝트들",
-          ],
         },
       ],
     };
@@ -39,6 +34,13 @@ export default {
   width: inherit;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.link-box::before {
+  content: "";
+  display: block;
+  margin-top: -64px;
+  padding-top: 64px;
 }
 
 ul {

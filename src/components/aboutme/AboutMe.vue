@@ -1,5 +1,5 @@
 <template>
-  <div class="about-me">
+  <div class="about-me" id="AboutMe">
     <h2>About Me</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
@@ -47,6 +47,13 @@ export default {
   width: inherit;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.about-me::before {
+  content: "";
+  display: block;
+  margin-top: -64px;
+  padding-top: 64px;
 }
 
 ul {
