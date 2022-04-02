@@ -1,10 +1,6 @@
 <template>
   <div :class="['header-nav-wrap', { 'header-scroll': isScroll }]">
-    <nav
-      class="header-nav"
-      ref="headerNav"
-      :class="{ 'header-scroll': isScroll }"
-    >
+    <nav class="header-nav" :class="{ 'header-scroll': isScroll }">
       <h1><a href="#Home">Wang DoWon</a></h1>
       <ul>
         <li>
@@ -35,13 +31,13 @@
     </nav>
   </div>
 
-  <nav
-    class="header-nav-small"
-    ref="headerNavSmall"
-    :class="{ 'header-scroll': isScroll || menu }"
-  >
+  <nav class="header-nav-small">
     <div>
-      <h1><a href="#Home">Wang DoWon</a></h1>
+      <div class="header-nav-small-titlebox">
+        <h1><a href="#Home">WDW's</a></h1>
+        <span>{{ currentView }}</span>
+      </div>
+
       <button @click="openMenu"></button>
     </div>
     <transition name="slide">
@@ -63,7 +59,7 @@ export default {
     return {
       menu: false,
       isScroll: false,
-      currentView: "Home",
+      currentView: "Portfolio",
       ulWidth: 0,
     };
   },
@@ -78,22 +74,10 @@ export default {
     onScroll() {
       const currentScrollPosition =
         window.scrollY || document.documentElement.scrollTop;
-      const headerHeight = 65;
-
-      const homeHeight =
-        document.querySelector(".home-box").offsetHeight - headerHeight;
-      const aboutMeHeight =
-        document.querySelector(".about-me").offsetHeight +
-        homeHeight -
-        headerHeight;
-      const skillsHeight =
-        document.querySelector(".skills-box").offsetHeight +
-        aboutMeHeight -
-        headerHeight;
-      const linkHeight =
-        document.querySelector(".link-box").offsetHeight +
-        skillsHeight -
-        headerHeight;
+      const homeScrollTop = document.querySelector("#Home").offsetTop;
+      const aboutMeScrollTop = document.querySelector("#AboutMe").offsetTop;
+      const skillsScrollTop = document.querySelector("#Skills").offsetTop;
+      const linkScrollTop = document.querySelector("#Link").offsetTop;
 
       if (currentScrollPosition > 0) {
         this.isScroll = true;
@@ -101,22 +85,22 @@ export default {
         this.isScroll = false;
       }
 
-      if (0 <= currentScrollPosition && currentScrollPosition < homeHeight) {
-        this.currentView = "Home";
+      if (
+        homeScrollTop <= currentScrollPosition &&
+        currentScrollPosition < aboutMeScrollTop
+      ) {
+        this.currentView = "Portfolio";
       } else if (
-        homeHeight <= currentScrollPosition &&
-        currentScrollPosition < aboutMeHeight
+        aboutMeScrollTop <= currentScrollPosition &&
+        currentScrollPosition < skillsScrollTop
       ) {
         this.currentView = "About Me";
       } else if (
-        aboutMeHeight <= currentScrollPosition &&
-        currentScrollPosition < skillsHeight
+        skillsScrollTop <= currentScrollPosition &&
+        currentScrollPosition < linkScrollTop
       ) {
         this.currentView = "Skills";
-      } else if (
-        skillsHeight <= currentScrollPosition &&
-        currentScrollPosition < linkHeight
-      ) {
+      } else if (linkScrollTop <= currentScrollPosition) {
         this.currentView = "Link";
       }
     },
@@ -162,6 +146,10 @@ export default {
 }
 
 /* header */
+h1 {
+  font-weight: bold;
+}
+
 .header-nav-wrap,
 .header-nav,
 .header-nav-small {
@@ -179,6 +167,7 @@ export default {
 .header-scroll {
   background-color: white;
   border-bottom: solid lightgray 1px;
+  transition: all 0.3s ease-in;
 }
 
 .header-nav {
@@ -204,6 +193,7 @@ export default {
 .header-nav > ul > li {
   flex: 1;
   text-align: right;
+  font-weight: bolder;
 }
 
 .header-nav-small {
@@ -220,6 +210,16 @@ export default {
   justify-content: space-between;
 }
 
+.header-nav-small-titlebox {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-small-titlebox > span {
+  font-size: 1em;
+  margin-left: 1rem;
+}
+
 .header-nav-small > ul {
   position: absolute;
   width: 100%;
@@ -231,7 +231,7 @@ export default {
 }
 
 .header-nav-small > ul > li {
-  margin: 2rem;
+  margin: 3rem 2rem;
 }
 
 .header-nav-small > div > button {
@@ -270,7 +270,7 @@ li > a {
   opacity: 0.5;
 }
 
-@media (min-width: 719px) {
+@media (min-width: 800px) {
   .header-nav-small {
     display: none;
   }

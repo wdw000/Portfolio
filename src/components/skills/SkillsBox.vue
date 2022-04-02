@@ -1,6 +1,6 @@
 <template>
   <div class="skills-box component-box" id="Skills">
-    <h2 class="hidden">Skills</h2>
+    <h2 hidden>Skills</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
         <skills-item :item="item"></skills-item>
@@ -73,7 +73,7 @@ export default {
   font-size: 1.6rem;
   width: inherit;
   max-width: 1300px;
-  margin: 5rem auto;
+  margin: 0 auto;
 }
 .skills-box::before {
   content: "";

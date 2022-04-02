@@ -27,6 +27,7 @@ export default {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 * {
@@ -35,9 +36,24 @@ html {
 
 h2,
 h3 {
-  font-weight: bold;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+@media (min-width: 600px) {
+  h2,
+  h3 {
+    font-size: 2.75rem;
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  h2,
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 .hidden {

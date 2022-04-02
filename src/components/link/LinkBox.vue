@@ -37,6 +37,18 @@ export default {
   font-size: 1.6rem;
 }
 
+@media (min-width: 600px) {
+  .link-box {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .link-box {
+    font-size: 2.5rem;
+  }
+}
+
 .link-box::before {
   content: "";
   display: block;
