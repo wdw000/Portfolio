@@ -43,8 +43,8 @@ export default {
             },
 
             {
-              name: "Express.js",
-              url: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+              name: "Firebase",
+              url: "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
             },
           ],
         },
