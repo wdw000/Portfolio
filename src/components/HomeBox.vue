@@ -45,9 +45,11 @@ export default {};
 
 .scroll-down {
   position: absolute;
+  color: gray;
   bottom: 5%;
   left: 50%;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: bold;
   transform: translate(-50%, 0);
   transform: rotate(90deg);
   animation: down infinite 1s alternate;
