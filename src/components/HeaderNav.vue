@@ -1,7 +1,7 @@
 <template>
-  <div :class="['header-nav-wrap', { 'header-scroll': isScroll }]">
-    <nav class="header-nav" :class="{ 'header-scroll': isScroll }">
-      <h1><a href="#Home">Wang DoWon</a></h1>
+  <div class="header-nav-wrap">
+    <nav class="header-nav">
+      <h1><a href="#">Wang DoWon</a></h1>
       <ul>
         <li>
           <a href="#AboutMe"
@@ -60,7 +60,6 @@ export default {
       menu: false,
       isScroll: false,
       currentView: "Portfolio",
-      ulWidth: 0,
     };
   },
   mounted() {
@@ -79,7 +78,7 @@ export default {
       const skillsScrollTop = document.querySelector("#Skills").offsetTop;
       const linkScrollTop = document.querySelector("#Link").offsetTop;
 
-      if (currentScrollPosition > 0) {
+      if (currentScrollPosition >= aboutMeScrollTop) {
         this.isScroll = true;
       } else {
         this.isScroll = false;
@@ -158,16 +157,12 @@ h1 {
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: white;
+  border-bottom: solid lightgray 1px;
 }
 
 .header-nav-wrap {
   display: none;
-}
-
-.header-scroll {
-  background-color: white;
-  border-bottom: solid lightgray 1px;
-  transition: all 0.3s ease-in;
 }
 
 .header-nav {

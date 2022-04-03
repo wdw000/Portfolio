@@ -1,6 +1,6 @@
 <template>
-  <header-nav></header-nav>
   <home-box></home-box>
+  <header-nav></header-nav>
   <about-me></about-me>
   <skills-box></skills-box>
   <link-box></link-box>
@@ -26,8 +26,8 @@ export default {
 
 html {
   font-size: 10px;
-  scroll-behavior: smooth;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
