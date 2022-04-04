@@ -3,7 +3,7 @@
     <a :href="`https://${item.url}`" target="_blank">
       <div :class="['link-wrap', item.class]">
         <div
-          class="inner item-hover"
+          class="link-inner item-hover"
           :style="{ 'background-image': `url(${item.imgSrc}` }"
         ></div>
       </div>
@@ -33,7 +33,7 @@ export default {
   content: "";
 }
 
-.inner {
+.link-inner {
   position: absolute;
   width: 80%;
   height: 80%;
