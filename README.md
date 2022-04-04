@@ -1,10 +1,10 @@
 # portfolio
 
 ## 주요기능
-Vue data, props를 통해 추후 내용 추가 및 삭제를 편리하게 작성
+### Vue data, props를 통해 추후 내용 추가 및 삭제를 편리하게 작성
 
 ## 사용한 것들
-Vue, HTML, CSS, JavaScript
+### Vue, HTML, CSS, JavaScript
 
 ## 배운 것
 ### Vue transition
