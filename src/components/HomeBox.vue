@@ -55,6 +55,17 @@ export default {};
   animation: down infinite 1s alternate;
 }
 
+@media (min-width: 800px) {
+  .home-box,
+  .home-title {
+    height: calc(100vh - 64px);
+  }
+
+  .scroll-down {
+    display: none;
+  }
+}
+
 /* trasition */
 .slide-fade-enter-active {
   transition: all 0.6s ease-in-out;

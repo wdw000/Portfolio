@@ -4,6 +4,7 @@
   <about-me></about-me>
   <skills-box></skills-box>
   <link-box></link-box>
+  <project-box></project-box>
   <div class="test"></div>
 </template>
 
@@ -12,11 +13,12 @@ import AboutMe from "./components/aboutme/AboutMe.vue";
 import HeaderNav from "./components/HeaderNav.vue";
 import HomeBox from "./components/HomeBox.vue";
 import LinkBox from "./components/link/LinkBox.vue";
+import ProjectBox from "./components/projects/ProjectBox.vue";
 import SkillsBox from "./components/skills/SkillsBox.vue";
 
 export default {
   name: "App",
-  components: { AboutMe, SkillsBox, LinkBox, HeaderNav, HomeBox },
+  components: { AboutMe, SkillsBox, LinkBox, HeaderNav, HomeBox, ProjectBox },
 
   methods: {},
 };

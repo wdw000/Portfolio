@@ -34,7 +34,7 @@
   <nav class="header-nav-small">
     <div>
       <div class="header-nav-small-titlebox">
-        <h1><a href="#Home">WDW's</a></h1>
+        <h1><a href="#Home" @click="openMenu">WDW's</a></h1>
         <span>{{ currentView }}</span>
       </div>
 
@@ -77,6 +77,7 @@ export default {
       const aboutMeScrollTop = document.querySelector("#AboutMe").offsetTop;
       const skillsScrollTop = document.querySelector("#Skills").offsetTop;
       const linkScrollTop = document.querySelector("#Link").offsetTop;
+      const projectsScrollTop = document.querySelector("#Projects").offsetTop;
 
       if (currentScrollPosition >= aboutMeScrollTop) {
         this.isScroll = true;
@@ -99,8 +100,13 @@ export default {
         currentScrollPosition < linkScrollTop
       ) {
         this.currentView = "Skills";
-      } else if (linkScrollTop <= currentScrollPosition) {
+      } else if (
+        linkScrollTop <= currentScrollPosition &&
+        currentScrollPosition < projectsScrollTop
+      ) {
         this.currentView = "Link";
+      } else if (projectsScrollTop <= currentScrollPosition) {
+        this.currentView = "Projects";
       }
     },
   },
