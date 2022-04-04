@@ -6,6 +6,11 @@ Vue data, props를 통해 추후 내용 추가 및 삭제를 편리하게 작성
 ## 사용한 것들
 Vue, HTML, CSS, JavaScript
 
+## 배운 것
+### Vue transition
+### CSS 반응형 웹
+### Vue 전반적인 기능 복습
+
 ## Project setup
 ```
 npm install
