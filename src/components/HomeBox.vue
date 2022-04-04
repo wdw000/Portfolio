@@ -46,7 +46,7 @@ export default {};
 .scroll-down {
   position: absolute;
   color: gray;
-  bottom: 5%;
+  bottom: 10%;
   left: 50%;
   font-size: 5rem;
   font-weight: bold;
@@ -63,6 +63,7 @@ export default {};
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   transform: translateY(50px);
+  filter: blur(3px);
   opacity: 0;
 }
 
@@ -70,11 +71,21 @@ export default {};
 
 @keyframes down {
   from {
-    bottom: 5%;
+    bottom: 10%;
   }
 
   to {
-    bottom: 2%;
+    bottom: 5%;
+  }
+}
+
+@keyframes titleOpacity {
+  from {
+    filter: blur(0);
+  }
+
+  to {
+    filter: blur(3px);
   }
 }
 </style>
