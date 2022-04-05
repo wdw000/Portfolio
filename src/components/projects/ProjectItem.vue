@@ -22,14 +22,19 @@
           </li></a
         >
 
-        <li v-if="item.url.site">
-          <div class="project-site"></div>
-          <div class="link-img">site</div>
-        </li>
-        <li v-if="item.url.pdf">
-          <div class="project-pdf"></div>
-          <div class="link-img">pdf</div>
-        </li>
+        <a :href="item.url.site" target="_blank" v-if="item.url.site">
+          <li>
+            <div class="project-site"></div>
+            <div class="link-img">site</div>
+          </li></a
+        >
+
+        <a :href="item.url.pdf" target="_blank" v-if="item.url.pdf">
+          <li>
+            <div class="project-pdf"></div>
+            <div class="link-img">pdf</div>
+          </li></a
+        >
       </ul>
     </div>
   </article>

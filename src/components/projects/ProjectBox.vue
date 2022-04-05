@@ -1,9 +1,15 @@
 <template>
   <div class="project-box" id="Projects">
     <h2>Projects</h2>
-    <ul>
+    <ul class="project-wide">
       <li v-for="(item, index) in items" :key="index">
         <project-item :item="item"></project-item>
+      </li>
+    </ul>
+
+    <ul class="project-small">
+      <li v-for="(item, index) in items" :key="index">
+        <project-item-small :item="item"></project-item-small>
       </li>
     </ul>
   </div>
@@ -11,8 +17,9 @@
 
 <script>
 import ProjectItem from "./ProjectItem.vue";
+import ProjectItemSmall from "./ProjectItemSmall.vue";
 export default {
-  components: { ProjectItem },
+  components: { ProjectItem, ProjectItemSmall },
   data() {
     return {
       items: [
@@ -21,7 +28,7 @@ export default {
           imgSrc: "projects/todo.svg",
           url: {
             github: "https://github.com/wdw000/ToDo-Project",
-            site: "site",
+            site: "https://todo-e4862.web.app/login",
             pdf: "pdf",
           },
           used: "HTML, CSS, JavaScript, Vue, Firebase",
