@@ -5,11 +5,12 @@
   <skills-box></skills-box>
   <link-box></link-box>
   <project-box></project-box>
-  <div class="test"></div>
+  <footer-box></footer-box>
 </template>
 
 <script>
 import AboutMe from "./components/aboutme/AboutMe.vue";
+import FooterBox from './components/footer/FooterBox.vue';
 import HeaderNav from "./components/HeaderNav.vue";
 import HomeBox from "./components/HomeBox.vue";
 import LinkBox from "./components/link/LinkBox.vue";
@@ -18,9 +19,7 @@ import SkillsBox from "./components/skills/SkillsBox.vue";
 
 export default {
   name: "App",
-  components: { AboutMe, SkillsBox, LinkBox, HeaderNav, HomeBox, ProjectBox },
-
-  methods: {},
+  components: { AboutMe, SkillsBox, LinkBox, HeaderNav, HomeBox, ProjectBox, FooterBox },
 };
 </script>
 <style>
@@ -45,11 +44,6 @@ h3 {
 
 .hidden {
   font-size: 0;
-}
-
-.test {
-  height: 100vh;
-  background-color: gray;
 }
 
 .link-img::after {
