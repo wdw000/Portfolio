@@ -1,21 +1,16 @@
 <template>
-  <div class="footer-box">
-      <footer-item></footer-item>
-  </div>
+  <div class="footer-box"></div>
 </template>
 
 <script>
-import FooterItem from "./FooterItem.vue";
-
 export default {
-    components: { FooterItem },
-}
+  components: {},
+};
 </script>
 
 <style scoped>
 .footer-box {
-    width: 100%;
-    height: 10rem;
-    background-color: gray;
+  width: 100%;
+  background-color: #222222;
 }
 </style>
