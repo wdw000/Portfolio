@@ -130,6 +130,7 @@ li > div[class*="project"] {
   padding: 1rem;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 2rem;
 }
 
 .project-small-img {
