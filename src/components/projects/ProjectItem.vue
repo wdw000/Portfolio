@@ -18,21 +18,21 @@
         <a :href="item.url.github" target="_blank" v-if="item.url.github"
           ><li>
             <div class="project-git"></div>
-            <div class="link-img">github</div>
+            <div class="link-img">GITHUB</div>
           </li></a
         >
 
         <a :href="item.url.site" target="_blank" v-if="item.url.site">
           <li>
             <div class="project-site"></div>
-            <div class="link-img">site</div>
+            <div class="link-img">WEB</div>
           </li></a
         >
 
         <a :href="item.url.pdf" target="_blank" v-if="item.url.pdf">
           <li>
             <div class="project-pdf"></div>
-            <div class="link-img">pdf</div>
+            <div class="link-img">PDF</div>
           </li></a
         >
       </ul>

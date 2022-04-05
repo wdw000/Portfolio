@@ -1,49 +1,46 @@
 <template>
   <article class="project-item-small">
     <div class="project-small-inner">
-      <transition name="opacity">
-        <div class="project-small-content" v-if="showContent">
-          <h3>{{item.title}}</h3>
-          <dl>
-            <dt>Functions</dt>
-            <dd v-for="(list, index) in item.functions" :key="index">
-              {{list}}
-            </dd>
-            <dt>Skills</dt>
-            <dd>{{item.used}}</dd>
-          </dl>
-          <p>Link</p>
-          <ul>
-            <a :href="item.url.github" target="_blank" v-if="item.url.github"
-              ><li>
-                <div class="project-git"></div>
-                <div class="link-img">github</div>
-              </li></a
-            >
+      <div class="project-small-content" v-show="showContent">
+        <h3>{{ item.title }}</h3>
+        <dl>
+          <dt>Functions</dt>
+          <dd v-for="(list, index) in item.functions" :key="index">
+            {{ list }}
+          </dd>
+          <dt>Skills</dt>
+          <dd>{{ item.used }}</dd>
+        </dl>
+        <p>Link</p>
+        <ul>
+          <a :href="item.url.github" target="_blank" v-if="item.url.github"
+            ><li>
+              <div class="project-git"></div>
+              <div class="link-img">GITHUB</div>
+            </li></a
+          >
 
-            <a :href="item.url.site" target="_blank" v-if="item.url.site">
-              <li>
-                <div class="project-site"></div>
-                <div class="link-img">site</div>
-              </li></a
-            >
+          <a :href="item.url.site" target="_blank" v-if="item.url.site">
+            <li>
+              <div class="project-site"></div>
+              <div class="link-img">WEB</div>
+            </li></a
+          >
 
-            <a :href="item.url.pdf" target="_blank" v-if="item.url.pdf">
-              <li>
-                <div class="project-pdf"></div>
-                <div class="link-img">pdf</div>
-              </li></a
-            >
-          </ul>
-        </div>
-      </transition>
-      <transition name="opacity">
-        <div class="project-small-img" v-if="!showContent">
-          <img :src="require(`@/assets/${item.imgSrc}`)" />
-        </div>
-      </transition>
+          <a :href="item.url.pdf" target="_blank" v-if="item.url.pdf">
+            <li>
+              <div class="project-pdf"></div>
+              <div class="link-img">PDF</div>
+            </li></a
+          >
+        </ul>
+      </div>
+
+      <div class="project-small-img" v-show="!showContent">
+        <img :src="require(`@/assets/${item.imgSrc}`)" />
+      </div>
     </div>
-    <div class="project-small-more" @click="isShow">MORE</div> 
+    <div class="project-small-more" @click="isShow">MORE</div>
   </article>
 </template>
 
@@ -55,13 +52,13 @@ export default {
   data() {
     return {
       showContent: false,
-    }
+    };
   },
   methods: {
     isShow() {
       this.showContent = !this.showContent;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -74,7 +71,8 @@ h3 {
   border-bottom: solid 2px lightgray;
 }
 
-dt,p {
+dt,
+p {
   font-weight: bold;
   font-size: 1.2em;
   margin: 1rem 0;
@@ -84,7 +82,8 @@ dd {
   margin: 1rem 0;
 }
 
-dd, ul {
+dd,
+ul {
   margin-left: 1rem;
 }
 
@@ -160,18 +159,5 @@ li > div[class*="project"] {
 
 .project-pdf {
   background-image: url("../../assets/img/picture_as_pdf_black_24dp.svg");
-}
-
-/* transiton */
-.opacity-enter-active {
-  transition: all 0.5s ease-in;
-}
-
-.opacity-enter-from {
-  opacity: 0;
-}
-
-.opacity-enter-to {
-  opacity: 1;
 }
 </style>
