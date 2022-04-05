@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+
+ul > li {
+  margin-bottom: 5rem;
+}
 .project-box {
   width: inherit;
   max-width: 1300px;
@@ -62,7 +66,21 @@ export default {
   padding-top: 64px;
 }
 
-ul > li {
-  margin-bottom: 5rem;
+.project-wide {
+  display: none;
+}
+
+.project-small {
+  display: block;
+}
+
+@media (min-width: 800px) {
+  .project-wide {
+    display: block;
+  }
+
+  .project-small {
+    display: none;
+  }
 }
 </style>

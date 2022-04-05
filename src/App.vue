@@ -43,21 +43,6 @@ h3 {
   margin: 2rem 0;
 }
 
-@media (min-width: 600px) {
-  h2,
-  h3 {
-    font-size: 2.75rem;
-    margin: 2rem 0;
-  }
-}
-
-@media (min-width: 992px) {
-  h2,
-  h3 {
-    font-size: 3rem;
-  }
-}
-
 .hidden {
   font-size: 0;
 }

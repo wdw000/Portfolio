@@ -66,21 +66,11 @@ dd {
   margin: 1rem 0;
   margin-left: 1rem;
 }
-/* 
-.project-item * {
-  border: solid black 1px;
-} */
 
 .project-item {
   display: flex;
   background-color: #f6f4f2;
   font-size: 1.6rem;
-}
-
-@media (min-width: 1000px) {
-  .project-item {
-    font-size: 2rem;
-  }
 }
 
 .project-item > div {
