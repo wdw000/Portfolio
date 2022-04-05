@@ -10,7 +10,7 @@
 
 <script>
 import AboutMe from "./components/aboutme/AboutMe.vue";
-import FooterBox from './components/footer/FooterBox.vue';
+import FooterBox from "./components/footer/FooterBox.vue";
 import HeaderNav from "./components/HeaderNav.vue";
 import HomeBox from "./components/HomeBox.vue";
 import LinkBox from "./components/link/LinkBox.vue";
@@ -19,15 +19,24 @@ import SkillsBox from "./components/skills/SkillsBox.vue";
 
 export default {
   name: "App",
-  components: { AboutMe, SkillsBox, LinkBox, HeaderNav, HomeBox, ProjectBox, FooterBox },
+  components: {
+    AboutMe,
+    SkillsBox,
+    LinkBox,
+    HeaderNav,
+    HomeBox,
+    ProjectBox,
+    FooterBox,
+  },
 };
 </script>
 <style>
 @import url("./assets/css/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap");
 
 html {
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
   scroll-behavior: smooth;
 }
 
