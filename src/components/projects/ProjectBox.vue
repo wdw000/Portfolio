@@ -29,7 +29,7 @@ export default {
           url: {
             github: "https://github.com/wdw000/ToDo-Project",
             site: "https://todo-e4862.web.app/login",
-            pdf: "pdf",
+            pdf: "https://drive.google.com/file/d/1kDDm_3BDMCf-dmAKy80CIsWbvRFSqbsX/view?usp=sharing",
           },
           used: "HTML, CSS, JavaScript, Vue, Firebase",
           functions: ["오늘의 할일 추가,삭제 및 수정", "지난 할일 통계"],

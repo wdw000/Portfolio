@@ -50,8 +50,7 @@ export default {};
   left: 50%;
   font-size: 5rem;
   font-weight: bold;
-  transform: translate(-50%, 0);
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(-50%);
   animation: down infinite 1s alternate;
 }
 
