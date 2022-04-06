@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
 .skills-box {
-  font-size: 1.6rem;
+  font-size: 1rem;
   width: inherit;
   max-width: 1300px;
   margin: 0 auto;

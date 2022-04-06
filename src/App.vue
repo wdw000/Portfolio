@@ -35,7 +35,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&display=swap");
 
 html {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Noto Sans", "Noto Sans KR", sans-serif;
   scroll-behavior: smooth;
 }
@@ -44,11 +44,11 @@ html {
   box-sizing: border-box;
 }
 
-h2,
-h3 {
+.title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.5em;
   margin: 2rem 0;
+  font-weight: bold;
 }
 
 .hidden {
@@ -70,6 +70,24 @@ h3 {
 @media (hover: hover) {
   .item-hover:hover {
     filter: blur(2px) grayscale(1);
+  }
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="about-me" id="AboutMe">
-    <h2>About Me</h2>
+    <h2 class="title">About Me</h2>
     <ul>
       <li v-for="(item, index) in items" :key="index">
         <about-me-item :item="item"></about-me-item>
@@ -50,7 +50,8 @@ export default {
 .about-me {
   width: inherit;
   max-width: 1300px;
-  margin: 5rem auto;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
 .about-me::before {

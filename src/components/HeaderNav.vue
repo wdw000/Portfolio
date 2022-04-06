@@ -114,42 +114,6 @@ export default {
 </script>
 
 <style scoped>
-/* transition */
-
-.slide-enter-active {
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-}
-
-.slide-leave-active {
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  overflow: hidden;
-  max-height: 0;
-}
-
-.slide-enter-to,
-.slide-leave-from {
-  overflow: hidden;
-  max-height: 220px;
-}
-
 /* header */
 h1 {
   font-weight: bold;
@@ -159,36 +123,39 @@ h1 {
 .header-nav,
 .header-nav-small {
   position: sticky;
-  height: 64px;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: white;
-  border-bottom: solid lightgray 1px;
+  font-size: 1rem;
 }
 
 .header-nav-wrap {
   display: none;
+  border-bottom: solid lightgray 1px;
 }
 
 .header-nav {
   width: inherit;
   max-width: 1300px;
   display: none;
+  height: 64px;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1.2em;
 }
 
 .header-nav > h1 {
   flex: 1;
+  margin-left: 1rem;
 }
 
 .header-nav > ul {
   display: flex;
   align-items: center;
   flex: 1;
+  margin-right: 1rem;
 }
 
 .header-nav > ul > li {
@@ -200,15 +167,18 @@ h1 {
 .header-nav-small {
   width: inherit;
   max-width: 1300px;
-  height: fit-content;
+  height: 64px;
   margin: 0 auto;
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 1.2em;
+  border-bottom: solid lightgray 1px;
 }
 
 .header-nav-small > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  height: inherit;
 }
 
 .header-nav-small-titlebox {
@@ -218,7 +188,7 @@ h1 {
 
 .header-nav-small-titlebox > span {
   font-size: 1em;
-  margin-left: 1rem;
+  margin-left: 0.5em;
 }
 
 .header-nav-small > ul {
@@ -292,5 +262,41 @@ li > a {
   .header-nav > ul > li > a:hover {
     color: gray;
   }
+}
+
+/* transition */
+
+.slide-enter-active {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.slide-leave-active {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  overflow: hidden;
+  max-height: 220px;
 }
 </style>

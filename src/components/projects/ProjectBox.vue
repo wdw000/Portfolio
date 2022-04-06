@@ -1,6 +1,6 @@
 <template>
   <div class="project-box" id="Projects">
-    <h2>Projects</h2>
+    <h2 class="title">Projects</h2>
     <ul class="project-wide">
       <li v-for="(item, index) in items" :key="index">
         <project-item :item="item"></project-item>
@@ -48,7 +48,6 @@ export default {
 </script>
 
 <style scoped>
-
 ul > li {
   margin-bottom: 5rem;
 }
@@ -57,6 +56,7 @@ ul > li {
   max-width: 1300px;
   padding: 0 2rem;
   margin: 5rem auto;
+  font-size: 1rem;
 }
 
 .project-box::before {

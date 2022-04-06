@@ -1,6 +1,6 @@
 <template>
   <article class="skills-item">
-    <h3>{{ item.title }}</h3>
+    <h3 class="title">{{ item.title }}</h3>
     <div :class="['skill-wrap', item.class]">
       <article
         v-for="(value, index) in item.titleItem"

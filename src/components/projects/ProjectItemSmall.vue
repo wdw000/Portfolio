@@ -1,7 +1,7 @@
 <template>
   <article class="project-item-small">
     <div class="project-small-inner">
-      <div class="project-small-content" v-show="showContent">
+      <div class="project-small-content" v-if="showContent">
         <h3>{{ item.title }}</h3>
         <dl>
           <dt>Functions</dt>
@@ -36,7 +36,7 @@
         </ul>
       </div>
 
-      <div class="project-small-img" v-show="!showContent">
+      <div class="project-small-img" v-if="!showContent">
         <img :src="require(`@/assets/${item.imgSrc}`)" />
       </div>
     </div>
@@ -66,10 +66,11 @@ export default {
 
 <style scoped>
 h3 {
-  margin: 0;
   padding-bottom: 1rem;
-  font-size: 2rem;
+  margin: 1rem 0;
+  font-size: 1.4em;
   font-weight: bold;
+  text-align: center;
   border-bottom: solid 2px lightgray;
 }
 
@@ -104,16 +105,19 @@ li {
 }
 
 li > div[class*="project"] {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+li > div[class*="project"] + div {
+  font-size: 0.8em;
+}
+
 .project-item-small {
   background-color: #f6f4f2;
-  font-size: 1.6rem;
   padding: 2rem;
   padding-bottom: 0;
   max-width: 350px;
@@ -131,7 +135,7 @@ li > div[class*="project"] {
   padding: 1rem;
   cursor: pointer;
   text-decoration: underline;
-  font-size: 2rem;
+  font-size: 1.2em;
 }
 
 .project-small-img {

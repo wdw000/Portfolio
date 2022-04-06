@@ -31,7 +31,7 @@ export default {};
 
 .home-title {
   height: 100vh;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 .home-title > div {
@@ -87,16 +87,6 @@ export default {};
 
   to {
     bottom: 5%;
-  }
-}
-
-@keyframes titleOpacity {
-  from {
-    filter: blur(0);
-  }
-
-  to {
-    filter: blur(3px);
   }
 }
 </style>

@@ -24,7 +24,7 @@ export default {
 .footer-box {
   width: 100%;
   background-color: #222222;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: white;
   padding: 2rem;
 }
@@ -42,8 +42,8 @@ ul {
 
 li {
   margin: 0 1rem;
-  width: 6rem;
-  height: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: white;
   border: solid white 2px;
   border-radius: 6rem;

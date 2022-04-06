@@ -29,7 +29,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 1.6rem;
   margin: 0 10%;
 }
 dl {

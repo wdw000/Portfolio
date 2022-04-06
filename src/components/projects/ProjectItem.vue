@@ -50,16 +50,19 @@ export default {
 
 <style scoped>
 h3 {
-  margin: 0;
-  border-bottom: lightgrey solid 2px;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.4em;
   font-weight: bold;
+  padding-bottom: 1rem;
+  border-bottom: lightgrey solid 2px;
 }
 
 dt,
 p {
   font-size: 1.2em;
   font-weight: bold;
-  margin-top: 2rem;
+  margin: 1rem 0;
 }
 
 dd {
@@ -70,7 +73,6 @@ dd {
 .project-item {
   display: flex;
   background-color: #f6f4f2;
-  font-size: 1.6rem;
 }
 
 .project-item > div {
@@ -90,7 +92,7 @@ dd {
 
 .project-item-img > img {
   position: absolute;
-  padding: 5rem;
+  padding: 2rem;
   width: 80%;
   height: 80%;
   top: 50%;
@@ -113,20 +115,26 @@ ul {
   margin-top: 1rem;
 }
 
+a > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 li {
   margin-right: 3rem;
 }
 
 li > div[class*="project"] {
-  width: 6rem;
-  height: 6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 li > div[class*="project"] + div {
-  text-align: center;
+  font-size: 0.8em;
 }
 
 .project-git {
