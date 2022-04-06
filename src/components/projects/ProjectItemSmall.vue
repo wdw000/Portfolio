@@ -40,7 +40,9 @@
         <img :src="require(`@/assets/${item.imgSrc}`)" />
       </div>
     </div>
-    <div class="project-small-more" @click="isShow">MORE</div>
+    <div class="project-small-more" @click="isShow">
+      {{ showContent ? "IMG" : "MORE" }}
+    </div>
   </article>
 </template>
 

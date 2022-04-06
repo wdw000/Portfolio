@@ -17,7 +17,7 @@ export default {
     return {
       items: [
         {
-          title: "github",
+          title: "GITHUB",
           class: "link-github",
           url: "github.com/wdw000",
           imgSrc:

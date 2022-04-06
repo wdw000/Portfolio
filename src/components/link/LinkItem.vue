@@ -49,5 +49,6 @@ export default {
 p {
   text-align: center;
   margin-top: 1rem;
+  font-size: 0.7em;
 }
 </style>
