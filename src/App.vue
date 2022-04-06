@@ -46,7 +46,7 @@ html {
 
 .title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin: 2rem 0;
   font-weight: bold;
 }

@@ -53,8 +53,8 @@ export default {
           title: "Learning",
           titleItem: [
             {
-              name: "React.js",
-              url: "https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg",
+              name: "Nuxt.js",
+              url: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg",
             },
             {
               name: "TypeScript",

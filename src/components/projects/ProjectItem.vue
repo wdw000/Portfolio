@@ -1,7 +1,7 @@
 <template>
   <article class="project-item">
     <div class="project-item-img">
-      <img :src="require(`@/assets/${item.imgSrc}`)" />
+      <img class="item-hover" :src="require(`@/assets/${item.imgSrc}`)" />
     </div>
     <div class="project-item-content">
       <h3>{{ item.title }}</h3>
