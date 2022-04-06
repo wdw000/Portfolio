@@ -32,14 +32,17 @@ export default {
             pdf: "https://drive.google.com/file/d/1kDDm_3BDMCf-dmAKy80CIsWbvRFSqbsX/view?usp=sharing",
           },
           used: "HTML, CSS, JavaScript, Vue, Firebase",
-          functions: ["오늘의 할일 추가,삭제 및 수정", "지난 할일 통계"],
+          functions: ["-오늘의 할일 추가,삭제 및 수정", "-지난 할일 통계"],
         },
         {
           title: "Portfolio",
           imgSrc: "home-title2.svg",
-          url: { github: "https://github.com/wdw000/Portfolio", site: "site" },
+          url: {
+            github: "https://github.com/wdw000/Portfolio",
+            site: "https://wdw000.github.io",
+          },
           used: "HTML, CSS, JavaScript, Vue",
-          functions: ["인적 사항, 기술 스택, 링크 및 프로젝트 정보 제공"],
+          functions: ["-인적 사항, 기술 스택, 링크 및 프로젝트 정보 제공"],
         },
       ],
     };
