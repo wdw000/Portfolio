@@ -57,8 +57,7 @@
 export default {
   data() {
     return {
-      menu: false,
-      isScroll: false,
+      menu: false,  
       currentView: "Portfolio",
     };
   },
@@ -78,12 +77,6 @@ export default {
       const skillsScrollTop = document.querySelector("#Skills").offsetTop;
       const linkScrollTop = document.querySelector("#Link").offsetTop;
       const projectsScrollTop = document.querySelector("#Projects").offsetTop;
-
-      if (currentScrollPosition >= aboutMeScrollTop) {
-        this.isScroll = true;
-      } else {
-        this.isScroll = false;
-      }
 
       if (
         homeScrollTop <= currentScrollPosition &&

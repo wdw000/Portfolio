@@ -1,4 +1,5 @@
 <template>
+<!-- email이 아닌 경우 -->
   <div class="about-me-item" v-if="item.class !== 'email'">
     <img :src="require(`@/assets/img/${item.imgSrc}`)" :alt="item.class" />
     <dl>
@@ -6,6 +7,7 @@
       <dd v-html="item.value"></dd>
     </dl>
   </div>
+<!-- email인 경우 -->
   <a href="mailto:dowonwang01@gmail.com" v-if="item.class === 'email'">
     <div class="about-me-item">
       <img :src="require(`@/assets/img/${item.imgSrc}`)" :alt="item.class" />

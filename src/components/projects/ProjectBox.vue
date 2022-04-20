@@ -1,12 +1,13 @@
 <template>
   <div class="project-box" id="Projects">
     <h2 class="title">Projects</h2>
+    <!-- 프로젝트 큰화면 -->
     <ul class="project-wide">
       <li v-for="(item, index) in items" :key="index">
         <project-item :item="item"></project-item>
       </li>
     </ul>
-
+    <!-- 프로젝트 작은 화면 -->
     <ul class="project-small">
       <li v-for="(item, index) in items" :key="index">
         <project-item-small :item="item"></project-item-small>
