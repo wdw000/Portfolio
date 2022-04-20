@@ -40,6 +40,7 @@ export default {
           url: {
             github: "https://github.com/wdw000/Portfolio",
             site: "https://wdw000.github.io",
+            pdf: "https://drive.google.com/file/d/1QCb3JU7HlmirJNFeu3E1xhRX1T_Rcvh2/view?usp=sharing",
           },
           used: "HTML, CSS, JavaScript, Vue",
           functions: ["-인적 사항, 기술 스택, 링크 및 프로젝트 정보 제공"],
