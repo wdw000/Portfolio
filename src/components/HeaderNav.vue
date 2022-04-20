@@ -34,7 +34,7 @@
   <nav class="header-nav-small">
     <div>
       <div class="header-nav-small-titlebox">
-        <h1><a href="#Home" @click="openMenu">WDW's</a></h1>
+        <h1><a href="#Home" @click="menu = false">WDW's</a></h1>
         <span>{{ currentView }}</span>
       </div>
 
