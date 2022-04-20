@@ -29,7 +29,7 @@ export default {
           imgSrc: "round_calendar_today_black_24dp_2x.png",
         },
         {
-          class: "school",
+          class: "education",
           name: "학력",
           value: "동양미래대학교<br>(컴퓨터정보공학과)",
           imgSrc: "round_edit_black_24dp_2x.png",
