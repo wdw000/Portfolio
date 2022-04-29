@@ -29,7 +29,7 @@ export default {
           url: {
             github: "https://github.com/wdw000/ToDo-Project",
             site: "https://todo-e4862.web.app/login",
-            pdf: "https://drive.google.com/file/d/1kDDm_3BDMCf-dmAKy80CIsWbvRFSqbsX/view?usp=sharing",
+            pdf: "https://drive.google.com/file/d/1e8mbCRHr-SFlq-p__VVgU_ot9KT9XjO8/view?usp=sharing",
           },
           used: "HTML, CSS, JavaScript, Vue, Firebase",
           functions: ["-오늘의 할일 추가,삭제 및 수정", "-지난 할일 통계"],
@@ -40,7 +40,7 @@ export default {
           url: {
             github: "https://github.com/wdw000/Portfolio",
             site: "https://wdw000.github.io",
-            pdf: "https://drive.google.com/file/d/1QCb3JU7HlmirJNFeu3E1xhRX1T_Rcvh2/view?usp=sharing",
+            pdf: "https://drive.google.com/file/d/1ovhd-aInyUCi-70H_o-P4ldVm3KcNjrX/view?usp=sharing",
           },
           used: "HTML, CSS, JavaScript, Vue",
           functions: ["-인적 사항, 기술 스택, 링크 및 프로젝트 정보 제공"],
