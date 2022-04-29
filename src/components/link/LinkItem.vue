@@ -7,8 +7,8 @@
           :style="{ 'background-image': `url(${item.imgSrc}` }"
         ></div>
       </div>
-      <p class="link-img">{{ item.title }}</p></a
-    >
+      <p class="link-img">{{ item.title }}</p>
+    </a>
   </div>
 </template>
 

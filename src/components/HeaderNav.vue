@@ -57,7 +57,11 @@
 export default {
   data() {
     return {
+<<<<<<< HEAD
       menu: false,
+=======
+      menu: false,  
+>>>>>>> 42422de841708718cebc3fe974fc693d20b111ce
       currentView: "Portfolio",
     };
   },
